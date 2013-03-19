@@ -27,7 +27,7 @@ try {
 
 //SETUP
 app.configure(function(){
-  app.set('port', 8080);
+  app.set('port', process.env.port || 5000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
