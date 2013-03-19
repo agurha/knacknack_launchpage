@@ -1,0 +1,61 @@
+//
+   Created with JetBrains WebStorm.
+   User: agurha
+   Date: 19/03/2013
+   Time: 10:42
+   To change this template use File | Settings | File Templates.
+
+extends layout
+
+block content
+  nav.navbar
+    .navbar-inner
+      .container
+        a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.brand(href='https://knacknack.com/')
+        .nav-collapse
+          ul.nav
+            li
+              a(href='/about/') About us
+  article(class='container')
+    div(class='page')
+      h1 About Us
+
+      p
+        | We are passionate technologist who love building products.
+
+
+      p
+        | Knacknack is borne out of founders frustration as how difficult it is to get useful information out of twitter
+
+      p
+        | Drop us an email at
+        a(href='mailto:hello@knacknack.com') hello@knacknack.com
+
+      hr
+
+      h2
+        | The Team
+        small
+        | — We like building revolutionary products.
+
+      small
+        small
+          .row.team
+            p.span3
+              img(src='', width='72', height='72')
+              strong Tom Mitchell
+              br
+              | Founder
+              br
+              a.light(href='http://twitter.com/tom', target='_blank') @tom
+            p.span3
+              img(src='', width='72', height='72')
+              strong Ankur Gurha
+              br
+              | Founder, Chief-hacker
+              br
+              a.light(href='http://twitter.com/agurha', target='_blank') @agurha

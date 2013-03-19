@@ -1,0 +1,62 @@
+//
+   Created with JetBrains WebStorm.
+   User: agurha
+   Date: 19/03/2013
+   Time: 10:42
+   To change this template use File | Settings | File Templates.
+
+extends layout
+
+block content
+  nav.navbar
+    .navbar-inner
+      .container
+        a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.brand(href='https://knacknack.com/')
+        .nav-collapse
+          ul.nav
+            li
+              a(href='/about/') About us
+
+  article(class='container')
+    div(id='landing')
+      div(class='container')
+        header(class='hero-unit')
+          h1 knacknack is cool
+            small follow topics you are interested in rather people
+          p
+           | signup goes here ...
+
+      div(class='container')
+        section
+          div(class='row features')
+            div(class='span6')
+              i(class='bookmarking')
+              h3 Hash tag following
+
+              p
+                | Some text goes here
+
+            div(class='span6')
+              i(class='search')
+              h3 Organise you news feed via knacknack
+
+              p
+                | Some text goes here
+
+
+            div(class='span6')
+              i(class='collaborate')
+              h3 Discover topic and links you interested in
+
+              p
+                | Some text goes here
+
+
+
+
+
+

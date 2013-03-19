@@ -1,0 +1,19 @@
+{
+  "name": "knacknack_launchpage",
+  "domains": [
+    "knacknack.com",
+    "www.knacknack.com"
+  ],
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "jade": "latest",
+    "express": "latest",
+    "mailchimp": "latest"
+  }
+}
