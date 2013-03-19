@@ -1,6 +1,9 @@
 {
   "name": "knacknack_launchpage",
   "version": "0.0.1",
+  "scripts": {
+    "start": "forever app.js"
+  },
   "engines": {
     "node": "0.8.x",
     "npm":  "1.2.x"
