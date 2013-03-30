@@ -1,55 +1,45 @@
-//
-   Created with JetBrains WebStorm.
-   User: agurha
-   Date: 19/03/2013
-   Time: 10:42
-   To change this template use File | Settings | File Templates.
-
 extends layout
 
 block content
-  nav.navbar
-    .navbar-inner
-      .container
-        a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.brand(href='http://www.nakack.com/')
-        .nav-collapse
-          ul.nav
-            li
-              a(href='/about/') About us
-  article(class='container')
-    div(class='page')
-      h1 About Us
-
-      p
-        | The Nakack team met at Credit Suisse where they developed a proprietary realtime PnL attribution and Risk calculation platform.
-        | They have extensive experience building very large distributed systems that perform at realtime speed.
-
-      hr
-
-      h2 The Team
-        small
-          small
-            .row.team
-              p.span3
-                img(src='', width='72', height='72')
-                strong Tom Mitchell
-                br
-                | Co-Founder
-                br
+    div(class='container-narrow')
+        div(class='masthead')
+            ul(class='nav nav-pills pull-right')
+                li
+                    a(href='#')
+                        | Home
+                li(class='active')
+                    a(href='/about/')
+                        | About
+            h3(class='muted')
+                | Nakack
+        hr
+        div(class='jumbotron')
+            h1
+                | About Us
+            p(class='lead')
+                | The Nakack team met at Credit Suisse where they developed a
+                | proprietary realtime PnL attribution and Risk calculation
+                | platform.  They have extensive experience building very large
+                | distributed systems that perform at realtime speed.
+        hr
+        div(class='row-fluid marketing')
+            div(class='span6')
+                h4 Tom Mitchell
+                h4 Co-Founder
                 a.light(href='https://twitter.com/tpmitchell', target='_blank') @tpmitchell
                 p
-                  | Tom has spent several years leading a team and developing PnL attribution & Risk calculation platforms for Credit Suisse.
-                  | He has also developed advanced software for the Oil and Gas industry, enabling interaction and validation between process flow schematics and 3d cad models.
+                    | Tom has spent several years leading a team and developing PnL
+                    | attribution & Risk calculation platforms for Credit Suisse.
+                    | He has also developed advanced software for the Oil and Gas industry,
+                    | enabling interaction and validation between process flow schematics
+                    | and 3d cad models.
                 p
-                  | Tom holds a BSc in Computer Programming from University of Kent, Canterbury.
-              p.span3
-                img(src='', width='72', height='72')
-                strong Ankur Gurha
-                br
-                | Co-Founder
-                br
+                    | Tom holds a BSc in Computer Programming from University of Kent, Canterbury.
+            div(class='span6')
+                h4 Ankur Gurha
+                h4 Co-Founder
                 a.light(href='https://twitter.com/agurha', target='_blank') @agurha
+                p
+        hr
+        div(class='footer')
+            p Nakack 2013
